@@ -1,0 +1,25 @@
+IF YOU WANT TO USE IT JUST DOWNLOAD THE PACKAGE THAT NEED TO INSTALL, AND THAT IS:
+1. customtkinter
+2. ctypes
+3. Pillow
+4. pytube
+ALL OF THEM ARE RECOMMENDED TO BE THE DOWNLOADED IN NEWEST VERSION
+
+RECOMMENDED PYTHON VERSION TO USE IT IS 3.9+
+IN MY MACHINE I USE 3.12
+
+HOW TO USE IT:
+1. TAKE URL YOUTUBE VIDEO THAT YOU WANT TO DOWNLOAD, RUN THE SCRIPT (main.py) AND JUST PASTE IT IN URL BOX
+2. AND THEN YOU CAN CHOOSE WHERE YOU CAN SAVE IT(IN BOX DOWNLOAD PATH)
+3. WAIT FOR THE DOWNLOAD AND THEN DONE 
+
+note:
+there's a error with pytube(version 15.0.0 the version that i'm using), i don't really know much about it i'm sorry
+but you can see it in the forum discussion right here:
+https://github.com/pytube/pytube/issues/1954
+
+but to summerize it you can just change the pattern in cipher file in folder pytube, to be precise it's in line 264
+with this:
+r'a\.[a-zA-Z]\s*&&\s*\([a-z]\s*=\s*a\.get\("n"\)\)\s*&&.*?\|\|\s*([a-z]+)',
+r'\([a-z]\s*=\s*([a-zA-Z0-9$]+)(\[\d+\])?\([a-z]\)',
+r'\([a-z]\s*=\s*([a-zA-Z0-9$]+)(\[\d+\])\([a-z]\)',
